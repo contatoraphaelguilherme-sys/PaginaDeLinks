@@ -175,8 +175,7 @@ h1 {
   opacity: 0.88;
 }
 
-.info-strip,
-.tutorial {
+.info-strip {
   width: calc(100% - 24px);
   margin: 0 auto;
   background: var(--surface-soft);
@@ -195,72 +194,6 @@ h1 {
   color: var(--text);
   line-height: 1.55;
   font-size: 15px;
-}
-
-.tutorial {
-  margin-top: 16px;
-  padding: 22px 18px 18px;
-  border-radius: 22px;
-}
-
-.section-heading h2 {
-  margin-top: 4px;
-  font-size: 27px;
-  line-height: 1.08;
-  max-width: 14ch;
-}
-
-.section-heading .eyebrow {
-  color: var(--accent);
-  margin-bottom: 0;
-}
-
-.steps {
-  display: grid;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.step {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 14px;
-  align-items: start;
-  padding: 16px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-}
-
-.step-number {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  border-radius: 13px;
-  background: #fff2ea;
-  color: #db5f18;
-  font-weight: 700;
-}
-
-.step h3 {
-  font-size: 17px;
-  margin-bottom: 6px;
-}
-
-.step p,
-.note {
-  color: var(--muted);
-  line-height: 1.55;
-  font-size: 14px;
-}
-
-.note {
-  margin-top: 14px;
-  padding: 15px 16px;
-  border-radius: 14px;
-  background: #fff8f4;
-  border: 1px solid rgba(255, 130, 71, 0.16);
 }
 
 @media (min-width: 720px) {
@@ -282,20 +215,7 @@ h1 {
     max-width: 10ch;
   }
 
-  .info-strip,
-  .tutorial {
+  .info-strip {
     width: calc(100% - 80px);
-  }
-
-  .tutorial {
-    padding: 28px;
-  }
-
-  .steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .step {
-    grid-template-columns: 1fr;
   }
 }
