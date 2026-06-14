@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ofertas da Shopee</title>
+    <title>Alerta de Celulares em Oferta</title>
     <meta
       name="description"
-      content="Entre nos canais de ofertas e receba promocoes, cupons e achadinhos selecionados."
+      content="Entre no WhatsApp ou Telegram e receba aviso na hora quando o preco de celulares cair."
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="page-shell">
+    <main>
       <section class="hero">
-        <div class="hero-media">
-          <img src="./assets/hero.png" alt="Compras online e promocoes" />
-        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
 
-        <div class="hero-copy">
-          <p class="eyebrow">Promocoes atualizadas</p>
-          <h1>Entre nos canais e receba as melhores ofertas</h1>
-          <p class="intro">
-            Escolha onde voce quer acompanhar os achadinhos e entre direto no canal certo.
+        <div class="hero-content">
+          <p class="eyebrow">Alertas de celulares</p>
+          <h1>Quando o preco cair, voce recebe o aviso na hora</h1>
+          <p class="hero-text">
+            Entre no canal ou no grupo para acompanhar quedas de preco, ofertas relampago e
+            oportunidades reais em celulares.
           </p>
 
-          <div class="actions">
+          <div class="hero-points" aria-label="Beneficios">
+            <span>Preco caiu</span>
+            <span>Aviso imediato</span>
+            <span>Link direto</span>
+          </div>
+
+          <div class="hero-actions">
             <a
-              class="action-button whatsapp pending"
-              href="#tutorial"
-              id="whatsappButton"
-              aria-disabled="true"
+              class="action-button whatsapp"
+              href="https://whatsapp.com/channel/0029Vb8GL8j1noz2nqEBKC2a"
+              target="_blank"
+              rel="noreferrer"
             >
               <span class="button-icon">W</span>
-              <span class="button-text">
-                <strong>WhatsApp</strong>
-                <small>Adicione seu link para ativar</small>
+              <span class="button-copy">
+                <strong>Entrar no WhatsApp</strong>
+                <small>Receber avisos no canal</small>
               </span>
             </a>
 
@@ -45,19 +51,26 @@
               rel="noreferrer"
             >
               <span class="button-icon">T</span>
-              <span class="button-text">
-                <strong>Telegram</strong>
-                <small>Entrar agora</small>
+              <span class="button-copy">
+                <strong>Entrar no Telegram</strong>
+                <small>Ver alertas e ofertas agora</small>
               </span>
             </a>
           </div>
         </div>
       </section>
 
+      <section class="info-strip">
+        <p>
+          O foco aqui e avisar rapido. Se aparecer um celular com preco bom, o link vai para o
+          grupo na hora.
+        </p>
+      </section>
+
       <section class="tutorial" id="tutorial">
         <div class="section-heading">
-          <p class="eyebrow">Como entrar</p>
-          <h2>Tutorial rapido</h2>
+          <p class="eyebrow">Como funciona</p>
+          <h2>Entre uma vez e acompanhe as quedas de preco</h2>
         </div>
 
         <div class="steps">
@@ -65,7 +78,7 @@
             <span class="step-number">1</span>
             <div>
               <h3>Escolha o canal</h3>
-              <p>Toque no botao do Telegram ou, quando ativado, no botao do WhatsApp.</p>
+              <p>Toque no botao do WhatsApp ou do Telegram.</p>
             </div>
           </article>
 
@@ -73,26 +86,24 @@
             <span class="step-number">2</span>
             <div>
               <h3>Entre no grupo ou canal</h3>
-              <p>No Telegram, toque em <strong>Entrar</strong>. No WhatsApp, toque em
-                <strong>Participar</strong>.</p>
+              <p>Depois disso, e so deixar as notificacoes ativas para receber os avisos.</p>
             </div>
           </article>
 
           <article class="step">
             <span class="step-number">3</span>
             <div>
-              <h3>Ative as notificacoes</h3>
-              <p>Assim voce recebe as ofertas no horario certo e nao perde os descontos melhores.</p>
+              <h3>Receba o alerta no momento certo</h3>
+              <p>Quando surgir uma queda de preco boa em celular, o link vai direto para voce.</p>
             </div>
           </article>
         </div>
 
         <div class="note">
-          <strong>Dica:</strong> confira sempre o preco final, o frete e o prazo antes de concluir a compra.
+          <strong>Dica:</strong> confira sempre o valor final, frete e prazo antes de concluir a
+          compra.
         </div>
       </section>
     </main>
-
-    <script src="./page.js"></script>
   </body>
 </html>
