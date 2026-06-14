@@ -27,8 +27,8 @@ declineButton.addEventListener('click', () => {
 copyLinkButton.addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(window.location.href);
-    copyFeedback.textContent = 'Link copiado. Agora e so colar no Google Chrome.';
+    copyFeedback.textContent = 'Link copiado. Agora \u00e9 s\u00f3 colar no Google Chrome.';
   } catch {
-    copyFeedback.textContent = 'Nao deu para copiar automaticamente. Copie o link pela barra do navegador.';
+    copyFeedback.textContent = 'N\u00e3o deu para copiar automaticamente. Copie o link pela barra do navegador.';
   }
 });
